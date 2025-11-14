@@ -15,4 +15,4 @@ Tool versions
 * Popper-js 2.11.8
 
 # License
-This code is released under the Apache License.
+This code is released under the Apache License, V2.0.
