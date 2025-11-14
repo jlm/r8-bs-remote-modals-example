@@ -8,3 +8,19 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.form-error {
+  color: var(--bs-red);
+}
+
+.table-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
