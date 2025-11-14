@@ -1,6 +1,12 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.order(id: :desc)
+    # Search for items using OR: http://stackoverflow.com/questions/3639656/activerecord-or-query
+    if params[:search].present?
+      t = @products.arel_table
+      match_string = "%#{params[:search]}%"
+      @products = @products.where(t[:name].matches(match_string).or(t[:description].matches(match_string)))
+    end
   end
 
   def new
