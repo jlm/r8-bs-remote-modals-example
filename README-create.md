@@ -16,10 +16,13 @@ Add slim, foreman, popper_js  and rspec to Gemfile in appropriate sections.
 bundle install
 rails db:prepare
 rails generate rspec:install
+rails generate devise:install
+rails generate devise User
 rails generate model product name:string description:text
 rails db:migrate
 ```
 Install or edit .gitignore to exclude /.idea/* (RubyMine configuration).
+Follow the instructions shown when installing Devise.
 
 Edit config/routes.rb:
 ```ruby
