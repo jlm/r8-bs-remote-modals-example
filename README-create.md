@@ -60,3 +60,6 @@ Edit app/javascript/application.js and add at the end:
 ```js
   import "@popperjs/core"
 ```
+
+Since creating this repository, I have changed the method of including Popper to the same method I use for Bootstrap;
+that is, importing it from a CDN.

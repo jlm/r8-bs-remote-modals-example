@@ -10,10 +10,11 @@ are shown in [README-create.md](https://github.com/jlm/r8-bs-remote-modals-examp
 The navbar has a search box and the search funtionality is implemented in `products_coltroller.rb`.
 Tool versions
 
-* Ruby 3.4.7
-* Rails 8.1.1
+* Ruby 3.4.8
+* Rails 8.1.2
 * Bootstrap 5.3.8
 * Popper-js 2.11.8
+* Devise 4.9.4
 
 # License
 This code is released under the Apache License, V2.0.
