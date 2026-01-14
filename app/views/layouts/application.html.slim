@@ -1,0 +1,13 @@
+doctype html
+html[lang="en"]
+  head
+    = render 'head'
+  body
+    = render 'layouts/header'
+    main
+      .flash-container
+        = flash_messages
+      .container.mt-4
+        = yield
+      - #= render('layouts/footer')
+    = turbo_frame_tag "remote_modal", target: "_top"
